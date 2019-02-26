@@ -9,4 +9,8 @@ In this project, we'll be implementing an LPC vocoder to reduce the bandwidth re
   - Hui-Ying Siao (hysiao@ucdavis.edu)
   
 ## Project Tasks
-  - 
+  - Importing voice file to Matlab code.
+  - Implement spectrogram.
+  - Design LPC algorithm processing.
+  - Design and implement voice synthesizer.
+
