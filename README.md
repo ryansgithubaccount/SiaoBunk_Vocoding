@@ -16,7 +16,10 @@ The tasks to be completed are as follows:
 - Design and implement a voice synthesizer to reconstruct audio data
 
 ## Research
-              Thus far, most of the effort expended has been on understanding the nature of the LPC algorithm and how it encodes data, since that would be necessary to the design of the rest of the system. Our current understanding of the LPC algorithm is that it encodes the data as the coefficients of the prediction function, which can then be used to reconstruct an approximation of the original signal. The following link proved helpful to understanding the theory behind the LPC algorithm.
+Thus far, most of the effort expended has been on understanding the nature of the LPC algorithm and how it encodes data, since that 
+would be necessary to the design of the rest of the system. Our current understanding of the LPC algorithm is that it encodes the data 
+as the coefficients of the prediction function, which can then be used to reconstruct an approximation of the original signal. The 
+following link proved helpful to understanding the theory behind the LPC algorithm.
  
 https://www.ece.ucsb.edu/Faculty/Rabiner/ece259/digital%20speech%20processing%20course/lectures_new/Lecture%2013_winter_2012_6tp.pdf
  
