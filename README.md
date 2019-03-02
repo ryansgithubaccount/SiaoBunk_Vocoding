@@ -43,3 +43,21 @@ https://ccrma.stanford.edu/~hskim08/lpc/
 and LPC functions to handle plotting and LPC encoding. So far these have been found to work very well. However, to implement the 
 synthesizer, we will go with the dynamic-coefficient FIR filter approach demonstrated in the Mathworks link. We are still attempting to 
 identify any distinct advantages to a lattice structure as opposed to a direct form structure in this context.
+
+## Milestones
+- Importing voice file to Matlab code. (Done)
+- Implement spectrogram. (Done)
+- Design LPC algorithm processing. (By March 8)
+- Design and implement voice synthesizer. ( By March 9)
+- Another way of estimating the pitch of the voice signal.  (By March 10)
+- GUI (By March 10)
+- Testing (By March 10)
+
+## Responsibilities
+- Importing voice file to Matlab code. (Hui-Ying)
+- Implement spectrogram. (Ryan)
+- Design LPC algorithm processing. (Ryan)
+- Design and implement voice synthesizer. (Hui-Ying)
+- Another way of estimating the pitch of the voice signal.  (Ryan)
+- GUI(Ryan)
+- Testing (Together)
