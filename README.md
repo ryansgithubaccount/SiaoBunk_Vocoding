@@ -61,3 +61,6 @@ identify any distinct advantages to a lattice structure as opposed to a direct f
 - Another way of estimating the pitch of the voice signal.  (Ryan)
 - GUI(Ryan)
 - Testing (Together)
+
+
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
