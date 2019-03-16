@@ -47,11 +47,11 @@ identify any distinct advantages to a lattice structure as opposed to a direct f
 ## Milestones
 - Importing voice file to Matlab code. (Done)
 - Implement spectrogram. (Done)
-- Design LPC algorithm processing. (By March 8)
-- Design and implement voice synthesizer. ( By March 9)
-- Another way of estimating the pitch of the voice signal.  (By March 10)
-- GUI (By March 10)
-- Testing (By March 10)
+- Design LPC algorithm processing. (Done)
+- Design and implement voice synthesizer. (Done)
+- Another way of estimating the pitch of the voice signal.  (By March 16)
+- GUI (By March 16)
+- Testing (By March 16)
 
 ## Responsibilities
 - Importing voice file to Matlab code. (Hui-Ying)
