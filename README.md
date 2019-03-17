@@ -49,18 +49,10 @@ identify any distinct advantages to a lattice structure as opposed to a direct f
 - Implement spectrogram. (Done)
 - Design LPC algorithm processing. (Done)
 - Design and implement voice synthesizer. (Done)
-- Another way of estimating the pitch of the voice signal.  (By March 16)
-- GUI (By March 16)
-- Testing (By March 16)
-
-## Responsibilities
-- Importing voice file to Matlab code. (Hui-Ying)
-- Implement spectrogram. (Ryan)
-- Design LPC algorithm processing. (Ryan)
-- Design and implement voice synthesizer. (Hui-Ying)
-- Another way of estimating the pitch of the voice signal.  (Ryan)
-- GUI(Ryan)
-- Testing (Together)
+- Another way of estimating the pitch of the voice signal. (Done)
+- GUI (Done)
+- Testing (Done)
+- Video (in progress)
 
 
 ![alt text](ryansgithubaccount/SiaoBunk_Vocoding/Output.jpg?raw=true "title")
