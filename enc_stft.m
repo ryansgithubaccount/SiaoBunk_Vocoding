@@ -1,10 +1,14 @@
 % STFT Pitch Detection
-function [yout Fs] = enc_stft(name)
+function [yout Fs] = enc_stft(name,br)
 
 [yin,Fs] = audioread(name);
 
 W = 4096;
-OL = 3000;
+OL = fix(4000.*(1-br))+1;
+if(mod(OL,2))
+    OL = OL + 1;
+end
+
 f = W-OL;
 frames = fix((length(yin)-OL)/(W-OL));
 %lpclen = fix((frames/300));
