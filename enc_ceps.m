@@ -1,11 +1,17 @@
 % STFT Pitch Detection
-function [yout Fs] = enc_ceps(name)
+function [yout Fs] = enc_ceps(name,br)
 
 [yin,Fs] = audioread(name);
 
 
 W = 4096;
-OL = 3000;
+OL = fix(4000.*(1-br))+1;
+if(mod(OL,2))
+    OL = OL + 1;
+end
+disp(br);
+disp(OL);
+
 f = W-OL;
 frames = fix((length(yin)-OL)/(W-OL));
 %lpclen = fix((frames/300));
@@ -18,6 +24,7 @@ w = (kaiser(W,12));
 
 y = lowpass(yin(:,1),300,Fs,'ImpulseResponse','fir','Steepness',0.9999);
 gain = movmean(abs(yin),256);
+y = (y./gain);
 
 pitch = zeros(frames,1);
 VUV = zeros(1,frames);
@@ -50,8 +57,8 @@ for n = 1:frames
 end
 
 ylpc0 = lowpass(yin(:,1),3500,Fs,'ImpulseResponse','iir','Steepness',0.7);
-ylpc0 = highpass(ylpc0,200,Fs,'ImpulseResponse','iir','Steepness',0.9999);
-%ylpc0 = yin(:,1);
+%ylpc0 = highpass(ylpc0,200,Fs,'ImpulseResponse','iir','Steepness',0.9999);
+ylpc0 = yin(:,1);
 
 for q = 1:frames
     [a(q,:),g(1,q)] = (lpc( (ylpc0( ((((q-1)*f)+1):((q*f))) ,1 )) , (lpclen-1)));
